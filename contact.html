@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="shortcut icon" href="img/Screenshot_2024-06-02_121621-removebg-preview.png">
+    <!-- normalize css do rendar to all elements  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- google fonts -->
+    <!-- note: the internet is important for the fonts to work -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        * {
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+body {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* header start */
+header {
+    background: linear-gradient(to right, white, #ff5b00);
+    width: 100%;
+    position: fixed;
+    top: 0rem;
+    /* Changed from 0px to 0rem */
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 6.25rem;
+    /* Changed from 10px and 100px to rem */
+}
+
+
+.checkbtn {
+    font-size: 1.875rem;
+    /* Changed from 30px to rem */
+    color: #551a8b;
+    float: right;
+    line-height: 5rem;
+    /* Changed from 80px to rem */
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+header .logo img {
+    width: 70px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #eee;
+    font-size:  1.3rem;
+    /* Changed from 25px to rem */
+    font-weight: 300 !important;
+    padding-left: 0.625rem;
+    /* Changed from 10px to rem */
+}
+
+.navbar a:hover {
+    color: #c9c6c6;
+}
+
+/* header end */
+
+
+
+/* contact start */
+
+.contact_sec {
+    margin-top: 40px;
+    padding: 6.25rem 6.25rem;
+    /* Changed from 100px to rem */
+    min-height: 48vh;
+}
+
+.cont_form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 35px;
+    height: 78vh;
+}
+
+
+.feedback_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Changed from start to flex-start */
+    gap: 1.25rem;
+    /* Changed from 20px to rem */
+}
+
+.feedback_form h2 {
+    font-weight: 600;
+    color: black;
+    font-size: 2.5rem;
+    /* Changed from 40px to rem */
+    margin-bottom: 0.3125rem;
+    /* Changed from 5px to rem */
+}
+
+.contact_inputs {
+    width: 25rem;
+    /* Changed from 400px to rem */
+    height: 3.125rem;
+    /* Changed from 50px to rem */
+    border: black solid 0.0625rem;
+    /* Changed from 1px to rem */
+    outline: none;
+    padding-left: 1.5625rem;
+    /* Changed from 25px to rem */
+    font-weight: 500;
+    color: #000000;
+    border-radius: 3.125rem;
+    /* Changed from 50px to rem */
+}
+
+.feedback_form textarea {
+    height: 8.75rem;
+    /* Changed from 140px to rem */
+    padding-top: 0.9375rem;
+    /* Changed from 15px to rem */
+    border-radius: 1.25rem;
+    /* Changed from 20px to rem */
+}
+
+.contact_inputs:focus {
+    border: 0.125rem teal solid;
+    /* Changed from 2px to rem */
+}
+
+.contact_inputs::placeholder {
+    font-size: 1.25rem;
+    /* Changed from 20px to rem */
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    /* Changed from 10px to rem */
+    border-radius: 3.125rem;
+    /* Changed from 50px to rem */
+    padding: 0.9375rem 1.875rem;
+    /* Changed from 15px and 30px to rem */
+    font-size: 1rem;
+    /* Changed from 16px to rem */
+    color: #ffff;
+    background-color: #00796b;
+}
+
+.btn {
+    display: flex;
+    gap: 7.9375rem;
+    /* Changed from 127px to rem */
+}
+
+iframe{
+    width: 600px;
+    height: 450px;
+
+}
+
+/* footer start */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2rem;
+    /* Changed from 32px to rem */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_title,
+.adress,
+.phonenumber,
+.emailadress {
+    font-size: 0.875rem;
+    /* Changed from 14px to rem */
+    font-weight: 600;
+}
+
+.phonenumber a,
+.emailadress a{
+    text-decoration: none;
+    color: white;   
+}
+
+.phonenumber a:hover,
+.emailadress a:hover{
+    text-decoration: underline;
+}
+
+.Copyrights_p {
+    font-size: 10px;
+}
+
+
+.links {
+    gap: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #eee;
+}
+
+.links ul h3{
+    font-size: 18px;
+}
+
+.links a:hover{
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: inline-flex;
+    margin-bottom: 1.375rem;
+    /* Changed from 22px to rem */
+    margin-left: -0.4375rem;
+    /* Changed from -7px to rem */
+    margin-right: 4.8125rem;
+    /* Changed from 77px to rem */
+}
+
+.icon_face,
+.icon_insta,
+.icon_ex,
+.icon_call,
+.icon_location {
+    margin: 0rem 0.25rem;
+    /* Changed from 0px and 20px to rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .sp {
+    display: block;
+    text-align: center;
+    height: 2.75rem;
+    /* Changed from 44px to rem */
+    width: 2.75rem;
+    /* Changed from 44px to rem */
+    background: #fff;
+    box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.wrapper #move:hover .sp {
+    color: #fff;
+}
+
+.wrapper .sp i {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5625rem;
+    /* Changed from 25px to rem */
+    line-height: 2.75rem;
+    /* Changed from 44px to rem */
+    color: #000000;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0rem;
+    /* Changed from 0px to rem */
+    background: #fff;
+    color: #fff;
+    box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+    /* Changed from 20px to rem */
+    padding: 0.625rem 1.125rem;
+    /* Changed from 10px and 18px to rem */
+    border-radius: 1.5625rem;
+    /* Changed from 25px to rem */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    bottom: -0.5rem;
+    /* Changed from -8px to rem */
+    left: 50%;
+    content: "";
+    height: 0.9375rem;
+    /* Changed from 15px to rem */
+    width: 0.9375rem;
+    /* Changed from 15px to rem */
+    background: #fff;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper #move:hover .tooltip {
+    top: -4.375rem;
+    /* Changed from -70px to rem */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper #move:hover .tooltip,
+.wrapper #move:hover .sp {
+    box-shadow: 0rem -0.0625rem 0rem rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .icon_face:hover .sp,
+.wrapper .icon_face:hover .tooltip,
+.wrapper .icon_face:hover .tooltip::before {
+    background-image: linear-gradient(45deg, #3b5998, #265e94);
+}
+
+.wrapper .icon_insta:hover .sp,
+.wrapper .icon_insta:hover .tooltip,
+.wrapper .icon_insta:hover .tooltip::before {
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.wrapper .icon_ex:hover .sp,
+.wrapper .icon_ex:hover .tooltip,
+.wrapper .icon_ex:hover .tooltip::before {
+    background-image: linear-gradient(to right, #1da1f2, #1c91da, #1978c8);
+}
+
+.wrapper .icon_call:hover .sp,
+.wrapper .icon_call:hover .tooltip,
+.wrapper .icon_call:hover .tooltip::before {
+    background: linear-gradient(to bottom, #00FF00, #008000);
+}
+
+.wrapper .icon_location:hover .sp,
+.wrapper .icon_location:hover .tooltip,
+.wrapper .icon_location:hover .tooltip::before {
+    background-image: linear-gradient(to right, #fd8700, #ffba00);
+
+}
+
+/* footer end */
+
+
+/* mobile */
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* header start */
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn i {
+        color: white;
+    }
+
+    header {
+        padding: 0.625rem 6.25rem;
+    }
+
+
+    .navbar {
+        position: fixed;
+        top: 5rem;
+        /* Changed from 80px to rem */
+        left: -100%;
+        width: 100%;
+        height: 86vh;
+        background: linear-gradient(to right, white, #ff5b00);
+        text-align: center;
+        transition: left 0.5s;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 3.125rem 0;
+        /* Changed from 50px to rem */
+        line-height: 1.875rem;
+        /* Changed from 30px to rem */
+    }
+
+
+    /* When the checkbox is checked, show the navbar */
+    #check:checked~.navbar {
+        left: 0;
+    }
+
+
+    /* header end */
+
+
+    .cont_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 87vh;
+    }
+
+    iframe{
+        display: none;
+    }
+
+
+
+    /* footer start */
+    .wrapper {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 19px;
+    }
+
+    .Copyrights_p,
+    .Copyrights_p span {
+        font-size: 13px;
+        margin-right: 7px;
+    }
+
+    /* footer end */
+
+}
+
+@media (min-width: 768px) {
+
+    html,
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <a href="#" class="logo"><img src="img/Screenshot_2024-06-02_121621-removebg-preview.png" alt="logo"></a>
+
+
+        <input type="checkbox" id="check" class="checkbtn">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="/index.html" target="_blank">home</a>
+            <a href="/index.html#services" target="_blank">Services</a>
+            <a href="/index.html#about" target="_blank">about</a>
+            <a href="/index.html#why-us" target="_blank">why us</a>
+            <a href="/index.html#client" target="_blank">cleints</a>
+        </nav>
+
+    </header>
+    <!-- header end -->
+
+    <!-- contact start -->
+    <section class="contact_sec">
+        <!-- <h2 class="hiddentitle">راسلنا</h2>  -->
+        <div class="cont_form">
+            <!-- hidden -->
+            <form class="feedback_form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="522fc03d-a8a1-40dc-a0c2-98e568fa7212">
+                <h2>contact us</h2>
+                <input type="text" name="name" placeholder="First name" class="contact_inputs" required>
+                <input type="text" name="name" placeholder="Last name" class="contact_inputs" required>
+                <input type="email" name="email" placeholder="Email" class="contact_inputs" required>
+                <input type="text" name="Company" placeholder="Company" class="contact_inputs" required>
+                <textarea name="message" placeholder="Write your message" class="contact_inputs"></textarea>
+                <div class="btn">
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i>Submit</button>
+                    <button type="reset"><i class="fa-solid fa-trash-arrow-up"></i>Reset</button>
+                </div>
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3349.6899893972154!2d13.234548292343135!3d32.90636385025232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDU0JzIzLjYiTiAxM8KwMTMnNTcuMiJF!5e0!3m2!1sar!2sly!4v1717318854578!5m2!1sar!2sly"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+    </div>
+    
+</section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="footer" id="contact">
+
+        <div class="info_footer">
+
+            <p class="adress">
+                location: Libya – Tripoli - Alshat Road
+            </p>
+
+            <p class="phonenumber">
+                Call: <a href="tel:00218920420042" target="_blank">+218920420042</a>
+            </p>
+
+            <p class="emailadress">
+                Emai: <a href="mailto:info@gaddor.com" target="_blank">info@gaddor.com</a>
+            </p>
+
+            <p class="Copyrights_p">Copyrights @ 2024 Gaddor for oil services</p>
+        </div>
+
+
+        <div class="links">
+            <ul>
+                <h3>Links</h6>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#why-us">Why us</a></li>
+                    <li><a href="/index.html#client">Client</a></li>
+                    <li><a href="https://maps.app.goo.gl/Qpwii5itSpo1wcz1A" target="_blank">location</a></li>
+            </ul>
+        </div>
+
+
+        <div class="wrapper">
+            <div id="move" class="icon_face">
+                <div class="tooltip">Facebook</div>
+                <span class="sp"><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+            </div>
+            <div id="move" class="icon_insta">
+                <div class="tooltip">Instagram</div>
+                <span class="sp"><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+            </div>
+            <div id="move" class="icon_ex">
+                <div class="tooltip">Twitter</div>
+                <span class="sp"><a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></span>
+            </div>
+            <div id="move" class="icon_call">
+                <div class="tooltip">Call</div>
+                <span class="sp"><a href="tel:00218093449965" target="_blank"><i
+                            class="fa-solid fa-phone"></i></a></span>
+            </div>
+            <div id="move" class="icon_location">
+                <div class="tooltip">location</div>
+                <span class="sp"><a href="https://maps.app.goo.gl/5KXRgXbXatffkyFK6" target="_blank"><i
+                            class="fa-solid fa-location-dot"></i></a></span>
+            </div>
+
+    </footer>
+    <!-- footer end -->
+</body>
+
+</html>

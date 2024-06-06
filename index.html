@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaddor for oil services</title>
+    <link rel="shortcut icon" href="img/Screenshot_2024-06-02_121621-removebg-preview.png">
+    <!-- normalize css do rendar to all elements  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- google fonts -->
+    <!-- note: the internet is important for the fonts to work --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        /* start global rules*/
+* {
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+body {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+:root {
+
+    --maincolor: #295829;
+    --hover: #009688;
+    --btncolor: #00796b;
+
+}
+
+/* end global rules */
+
+
+/* home start */
+header {
+    background: linear-gradient(to right, white, #ff5b00);
+    width: 100%;
+    position: fixed;
+    top: 0rem;
+    /* Changed from 0px to 0rem */
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 6.25rem;
+    /* Changed from 10px and 100px to rem */
+}
+
+.checkbtn {
+    font-size: 1.875rem;
+    /* Changed from 30px to rem */
+    color: #551a8b;
+    float: right;
+    line-height: 5rem;
+    /* Changed from 80px to rem */
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+header .logo img {
+    width: 70px;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #eee;
+    font-size: 1.3rem;
+    /* Changed from 25px to rem */
+    font-weight: 300 !important;
+    padding-left: 0.625rem;
+    /* Changed from 10px to rem */
+}
+
+.navbar a:hover {
+    color: #c9c6c6;
+}
+
+
+.main_sec {
+    display: flex;
+    align-items: center;
+    padding: 6.25rem 4.25rem;
+    /* Changed from 100px to rem */
+    min-height: 100vh;
+    background-image: url(/img/pexels-a-p-363022294-15085029.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    box-shadow: -3px 10px 45px gray;
+}
+
+.main_sec div {
+    text-align: center;
+}
+
+
+
+.main_sec h2 {
+    text-align: left;
+    color: #000000;
+    font-size: 1.875rem;
+    /* Changed from 30px to rem */
+    width: 36.25rem;
+    /* Changed from 580px to rem */
+}
+
+.main_sec .botton {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0.0625rem;
+    /* Changed from 1px to rem */
+    word-spacing: 0.1875rem;
+    /* Changed from 3px to rem */
+    background-color: #7a793c;
+    padding: 0.9375rem;
+    /* Changed from 15px to rem */
+    border-radius: 1.625rem 0.625rem 1.625rem 0.625rem;
+    /* Changed from 26px and 10px to rem */
+    color: white;
+    transition: 1s ease;
+}
+
+.main_sec .botton:hover {
+    background-color: #a1a039;
+    transform: scale(1.1);
+}
+
+/* home end */
+
+
+
+/* services start */
+.serv_sec {
+    padding: 6.25rem 0rem;
+    /* Changed from 100px and 0px to rem */
+    min-height: 48vh;
+    box-shadow: -3px 10px 45px gray;
+}
+
+.serv_title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    /* Changed from 40px to rem */
+    color: black;
+    margin-bottom: 2.5rem;
+    /* Changed from 40px to rem */
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0rem 0.4375rem 1.5625rem #01010140;
+    /* Changed from 0px, 7px, and 25px to rem */
+    background-color: white;
+    width: 21.25rem;
+    /* Changed from 340px to rem */
+    border-radius: 0.625rem;
+    /* Changed from 10px to rem */
+    padding: 1.875rem;
+    /* Changed from 30px to rem */
+    margin: 1.25rem;
+    /* Changed from 20px to rem */
+    transition: 1s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.icon {
+    font-size: 8rem;
+    /* Changed from 128px to rem */
+    text-align: center;
+    color: #66441c;
+}
+
+.info_serv,
+.info_footer,
+.info_why {
+    text-align: center;
+}
+
+.info_serv p,
+.info_why p {
+    color: #000;
+    font-weight: 600;
+}
+
+.info_serv h3,
+.info_why h3 {
+    margin: 0.625rem;
+    /* Changed from 10px to rem */
+    text-align: center;
+    color: #000000;
+}
+
+.cont a {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* services end */
+
+
+
+/* about start */
+.about_sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25rem 6.25rem;
+    /* Changed from 100px to rem */
+    min-height: 48vh;
+    box-shadow: -3px 10px 45px gray;
+}
+
+.about_title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    /* Changed from 40px to rem */
+    color: black;
+    margin-bottom: 2.5rem;
+    /* Changed from 40px to rem */
+}
+
+
+
+.about_sec img {
+    display: inline-block;
+    margin-right: 1.25rem;
+    margin-bottom: 1.25rem;
+    /* Changed from 20px to rem */
+    width: 31.25rem;
+    /* Changed from 500px to rem */
+    outline: #000000 solid 0.125rem;
+    /* Changed from 2px to rem */
+    border-radius: 1.25rem;
+    /* Changed from 20px to rem */
+    box-shadow: 13px 8px 50px #1979c881;
+}
+
+
+.about_sec p {
+    font-size: 1.30rem;
+    /* Changed from 20px to rem */
+    color: #000000;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* about end */
+
+
+/* between about and why us section start*/
+#picholder {
+    min-height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 3s ease-in-out;
+    animation: Changeable_pictures 10s infinite alternate;
+    box-shadow: -3px 10px 45px gray;
+}
+
+/* background images animation start */
+@keyframes Changeable_pictures {
+
+    0%,
+    20% {
+        background-image: url(/img/pexels-pixabay-257700.jpg);
+    }
+
+    25%,
+    45% {
+        background-image: url(/img/pexels-maahidphotos-16169309.jpg);
+    }
+
+    50%,
+    70% {
+        background-image: url(/img/pexels-jplenio-3105242.jpg);
+    }
+
+    75%,
+    95% {
+        background-image: url(/img/pexels-alshreef-18845296.jpg);
+    }
+}
+
+/* between about and why us section end*/
+
+
+
+/* why us start */
+
+.whyus_sec {
+    padding: 6.25rem 0rem;
+    /* Changed from 100px and 0px to rem */
+    min-height: 48vh;
+    box-shadow: -3px 10px 45px gray;
+}
+
+.whyus_title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    /* Changed from 40px to rem */
+    color: black;
+    margin-bottom: 2.5rem;
+    /* Changed from 40px to rem */
+}
+
+.card_why {
+    box-shadow: 0rem 0.4375rem 1.5625rem #01010140;
+    /* Changed from 0px, 7px, and 25px to rem */
+    background-color: white;
+    width: 21.25rem;
+    /* Changed from 340px to rem */
+    border-radius: 0.625rem;
+    /* Changed from 10px to rem */
+    padding: 1.875rem;
+    /* Changed from 30px to rem */
+    margin: 1.25rem;
+    /* Changed from 20px to rem */
+}
+
+/* why us end */
+
+
+/* between why us and client section start*/
+.picholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.25rem 0rem;
+    /* Changed from 100px and 0px to rem */
+    min-height: 48vh;
+}
+
+.picholder img {
+    width: 55%;
+}
+
+/* between why us and client section end*/
+
+
+/* client start */
+
+.client_sec {
+    padding: 6.25rem 0rem;
+    /* Changed from 100px and 0px to rem */
+    min-height: 48vh;
+    box-shadow: -3px 10px 45px gray;
+}
+
+.client_title {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    /* Changed from 40px to rem */
+    color: black;
+    margin-bottom: 2.5rem;
+    /* Changed from 40px to rem */
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 250px;
+    vertical-align: middle;
+}
+
+.mySlides .toobig {
+    width: 150px;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* client end */
+
+
+
+
+/* footer start */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2rem;
+    /* Changed from 32px to rem */
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_title,
+.adress,
+.phonenumber,
+.emailadress {
+    font-size: 0.875rem;
+    /* Changed from 14px to rem */
+    font-weight: 600;
+}
+
+.phonenumber a,
+.emailadress a {
+    text-decoration: none;
+    color: white;
+}
+
+.phonenumber a:hover,
+.emailadress a:hover {
+    text-decoration: underline;
+}
+
+.Copyrights_p {
+    font-size: 10px;
+}
+
+
+.links {
+    gap: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #eee;
+}
+
+.links ul h3 {
+    font-size: 18px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.wrapper {
+    display: inline-flex;
+    margin-bottom: 1.375rem;
+    /* Changed from 22px to rem */
+    margin-left: -0.4375rem;
+    /* Changed from -7px to rem */
+    margin-right: 4.8125rem;
+    /* Changed from 77px to rem */
+}
+
+.icon_face,
+.icon_insta,
+.icon_ex,
+.icon_call,
+.icon_location {
+    margin: 0rem 0.25rem;
+    /* Changed from 0px and 20px to rem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .sp {
+    display: block;
+    text-align: center;
+    height: 2.75rem;
+    /* Changed from 44px to rem */
+    width: 2.75rem;
+    /* Changed from 44px to rem */
+    background: #fff;
+    box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.wrapper #move:hover .sp {
+    color: #fff;
+}
+
+.wrapper .sp i {
+    position: relative;
+    z-index: 2;
+    font-size: 1.5625rem;
+    /* Changed from 25px to rem */
+    line-height: 2.75rem;
+    /* Changed from 44px to rem */
+    color: #000000;
+}
+
+.tooltip {
+    position: absolute;
+    top: 0rem;
+    /* Changed from 0px to rem */
+    background: #fff;
+    color: #fff;
+    box-shadow: 0rem 0.625rem 0.625rem rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+    /* Changed from 20px to rem */
+    padding: 0.625rem 1.125rem;
+    /* Changed from 10px and 18px to rem */
+    border-radius: 1.5625rem;
+    /* Changed from 25px to rem */
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip::before {
+    position: absolute;
+    bottom: -0.5rem;
+    /* Changed from -8px to rem */
+    left: 50%;
+    content: "";
+    height: 0.9375rem;
+    /* Changed from 15px to rem */
+    width: 0.9375rem;
+    /* Changed from 15px to rem */
+    background: #fff;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper #move:hover .tooltip {
+    top: -4.375rem;
+    /* Changed from -70px to rem */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper #move:hover .tooltip,
+.wrapper #move:hover .sp {
+    box-shadow: 0rem -0.0625rem 0rem rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .icon_face:hover .sp,
+.wrapper .icon_face:hover .tooltip,
+.wrapper .icon_face:hover .tooltip::before {
+    background-image: linear-gradient(45deg, #3b5998, #265e94);
+}
+
+.wrapper .icon_insta:hover .sp,
+.wrapper .icon_insta:hover .tooltip,
+.wrapper .icon_insta:hover .tooltip::before {
+    background-image: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.wrapper .icon_ex:hover .sp,
+.wrapper .icon_ex:hover .tooltip,
+.wrapper .icon_ex:hover .tooltip::before {
+    background-image: linear-gradient(to right, #1da1f2, #1c91da, #1978c8);
+}
+
+.wrapper .icon_call:hover .sp,
+.wrapper .icon_call:hover .tooltip,
+.wrapper .icon_call:hover .tooltip::before {
+    background: linear-gradient(to bottom, #00FF00, #008000);
+}
+
+.wrapper .icon_location:hover .sp,
+.wrapper .icon_location:hover .tooltip,
+.wrapper .icon_location:hover .tooltip::before {
+    background-image: linear-gradient(to right, #fd8700, #ffba00);
+
+}
+
+/* footer end */
+
+.flt_btn {
+    text-align: center;
+    position: fixed;
+    right: 33px;
+    bottom: 95px;
+    background-color: #fd8700;
+    height: 2.75rem;
+    width: 2.75rem;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.flt_btn a {
+    text-decoration: none;
+    color: #000;
+}
+
+.flt_btn a i {
+    font-size: 1.5625rem;
+    line-height: 1.75rem;
+}
+
+
+/* mobile */
+@media (max-width: 767px) {
+
+    html,
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    /* home start */
+    .checkbtn {
+        display: block;
+    }
+
+    .checkbtn i {
+        color: white;
+    }
+
+    header {
+        padding: 0.625rem 6.25rem;
+    }
+
+
+
+    .navbar {
+        position: fixed;
+        top: 5rem;
+        /* Changed from 80px to rem */
+        left: -100%;
+        width: 100%;
+        height: 86vh;
+        background: linear-gradient(to right, white, #ff5b00);
+        text-align: center;
+        transition: left 0.5s;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 3.125rem 0;
+        /* Changed from 50px to rem */
+        line-height: 1.875rem;
+        /* Changed from 30px to rem */
+    }
+
+
+    /* When the checkbox is checked, show the navbar */
+    #check:checked~.navbar {
+        left: 0;
+    }
+
+    .main_sec h2 {
+        font-size: 1.875rem;
+        /* Changed from 30px to rem */
+        width: 100%;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    .main_sec h3 {
+        font-size: 1.25rem;
+        /* Changed from 20px to rem */
+        text-align: center;
+    }
+
+    .main_sec div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* home end */
+
+    /* services start */
+    .serv_title {
+        font-size: 1.875rem;
+        /* Changed from 30px to rem */
+    }
+
+    .card {
+        width: 18.75rem;
+        /* Changed from 300px to rem */
+    }
+
+    /* services end */
+
+    /* about start */
+    .about_sec {
+        min-height: 66vh;
+    }
+
+    .about_title {
+        font-size: 1.875rem;
+        /* Changed from 30px to rem */
+    }
+
+    .about_sec a img {
+        display: inline-block;
+        width: 16.0625rem;
+        /* Changed from 303px to rem */
+        margin-bottom: 2.25rem;
+        /* Changed from 36px to rem */
+        opacity: 1;
+    }
+
+    /* about end */
+
+    /* client start */
+    .mySlides img {
+        width: 150px;
+        vertical-align: middle;
+    }
+    
+    .mySlides .toobig {
+        width: 75px;
+    }
+    /* client end */
+
+
+    /* footer start */
+    .wrapper {
+        display: none;
+    }
+
+    .footer {
+        justify-content: center;
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .info p {
+        font-size: 19px;
+    }
+
+    .Copyrights_p,
+    .Copyrights_p span {
+        font-size: 13px;
+        margin-right: 7px;
+    }
+
+    /* footer end */
+
+}
+
+@media (min-width: 768px) {
+
+    html,
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- header and main section start -->
+    <header>
+        <a href="#" class="logo"><img src="img/Screenshot_2024-06-02_121621-removebg-preview.png" alt="logo"></a>
+
+        <input type="checkbox" id="check" class="checkbtn">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">Services</a>
+            <a href="#about">about</a>
+            <a href="#why-us">why us</a>
+            <a href="#client">cleints</a>
+            <a href="contact.html" target="_blank">contact</a>
+        </nav>
+
+    </header>
+
+    <section class="main_sec" id="home">
+        <div>
+            <h2>Gaddor is an independent Libyan Oil and Gas services company founded by a skilled team in oil and gas
+                industry. To provide you state of the art solution to your Oil&Gas supply chain.</h2>
+            <a class="botton" href="#services">Our Services</a>
+        </div>
+
+    </section>
+    <!-- header and main section end -->
+
+
+
+    <!-- services start -->
+    <section class="serv_sec" id="services">
+        <h2 class="serv_title">Our Services</h2>
+        <div class="cont">
+            <a href="" target="_blank">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="info_serv">
+                        <h3>Facilities management</h3>
+                        <p>Providing all services related to the field of oil and gas, administrative services, advisory
+                            services, contracting, maintenance and supplies.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="" target="_blank">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-parachute-box"></i>
+                    </div>
+                    <div class="info_serv">
+                        <h3>supplies</h3>
+                        <p>Supplying everything related to the oil and gas sector, including production, maintenance and
+                            development of the production process</p>
+                    </div>
+                </div>
+            </a>
+            <a href="consulting.html" target="_blank">
+                <div class="card">
+                    <div class="icon">
+                        <i class="fa-solid fa-file-circle-question"></i>
+                    </div>
+                    <div class="info_serv">
+                        <h3>Consulting services</h3>
+                        <p>Everything related to contracting and maintenance works in offshore platforms, onshore and so
+                            on.</p>
+                    </div>
+            </a>
+        </div>
+        </div>
+    </section>
+    <!-- services end -->
+
+
+
+
+    <!-- about start -->
+    <section class="about_sec" id="about">
+        <h2 class="about_title">About</h2>
+        <img src="img/pexels-pixabay-302769.jpg" alt="صورة للمحل" title="Pic">
+        <p>Gaddor is an independent Libyan Oil and Gas services company founded by a skilled team in oil and gas
+            industry. To provide you state of the art solution to your Oil&Gas supply chain. Gaddor started as a service
+            company, specializes in providing high quality products through direct procurement as a highly trusted
+            supplier and a…</p>
+    </section>
+    <!-- about end -->
+
+
+    <!-- Changeable pictures -->
+    <div id="picholder" class="picholder"></div>
+
+
+    <!-- why us start -->
+    <section class="whyus_sec" id="why-us">
+        <h2 class="whyus_title">Why us!</h2>
+        <div class="cont">
+            <div class="card_why">
+                <div class="icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="info_why">
+                    <h3>Passionate</h3>
+                    <p>Time and safety are always our
+                        priorities, as our company has always
+                        been desirous of clean record free
+                        from any delay in dates and free
+                        from accidents in its projects or with
+                        vehicles it has always dealt with the
+                        best insurance companies.</p>
+                </div>
+            </div>
+
+            <div class="card_why">
+                <div class="icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <div class="info_why">
+                    <h3>Professional</h3>
+                    <p>Strengthen client base by ensuring
+                        excellence and innovation in service delivery. Enhance capability using the “build-borrow buy”
+                        growth pathway.
+                        Create and sustain strategic relationships
+                        that will guarantee superior delivery in a
+                        synergistic manner.Conduct business affairs in a transparent,
+                        professional and responsible manner.</p>
+                </div>
+            </div>
+
+            <div class="card_why">
+                <div class="icon">
+                    <i class="fa-solid fa-trademark"></i>
+                </div>
+                <div class="info_why">
+                    <h3>Support</h3>
+                    <p>We have developed a remarkable reputation with
+                        several financial institutions within and outside
+                        Libya and currently maintain a solid financial base
+                        to execute major projects. Our management
+                        account reports are readily available for concerned
+                        parties</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why us end -->
+
+    <!-- picture holder -->
+    <div class="picholder"><img src="img/cropped-GADDOR-Project-EX_compressed-2-1024x560.png" alt=""></div>
+
+    <!-- client start -->
+    <section class="client_sec" id="client">
+        <h2 class="client_title">Clients</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img/mabruk-removebg-preview.png">
+                <img class="toobig" src="img/Mellitah-oil-Gas-188x300-removebg-preview.png">
+                <img src="img/noc-removebg-preview.png">
+            </div>
+            <div class="mySlides fade">
+                <img src="img/photo_1_2024-06-02_11-46-40-removebg-preview.png">
+                <img src="img/photo_2_2024-06-02_11-46-40-removebg-preview.png">
+                <img src="img/photo_3_2024-06-02_11-46-40-removebg-preview.png">
+            </div>
+        </div>
+    </section>
+    <!-- client end -->
+
+
+    <!-- footer start -->
+    <footer class="footer" id="contact">
+
+        <div class="info_footer">
+
+            <p class="adress">
+                location: Libya – Tripoli - Alshat Road
+            </p>
+
+            <p class="phonenumber">
+                Call: <a href="tel:00218920420042" target="_blank">+218920420042</a>
+            </p>
+
+            <p class="emailadress">
+                Emai: <a href="mailto:info@gaddor.com" target="_blank">info@gaddor.com</a>
+            </p>
+
+            <p class="Copyrights_p">Copyrights @ 2024 Gaddor for oil services</p>
+        </div>
+
+
+        <div class="links">
+            <ul>
+                <h3>Links</h6>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#why-us">why us</a></li>
+                    <li><a href="contact.html" target="_blank">contact</a></li>
+            </ul>
+        </div>
+
+
+        <div class="wrapper">
+            <div id="move" class="icon_face">
+                <div class="tooltip">Facebook</div>
+                <span class="sp"><a href="" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></span>
+            </div>
+            <div id="move" class="icon_insta">
+                <div class="tooltip">Instagram</div>
+                <span class="sp"><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+            </div>
+            <div id="move" class="icon_ex">
+                <div class="tooltip">Twitter</div>
+                <span class="sp"><a href="" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></span>
+            </div>
+            <div id="move" class="icon_call">
+                <div class="tooltip">Call</div>
+                <span class="sp"><a href="tel:00218093449965" target="_blank"><i
+                            class="fa-solid fa-phone"></i></a></span>
+            </div>
+            <div id="move" class="icon_location">
+                <div class="tooltip">location</div>
+                <span class="sp"><a href="https://maps.app.goo.gl/5KXRgXbXatffkyFK6" target="_blank"><i
+                            class="fa-solid fa-location-dot"></i></a></span>
+            </div>
+
+    </footer>
+    <!-- footer end -->
+
+    <!-- flaoting btn -->
+    <span class="flt_btn"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></span>
+
+    <!-- javascript file -->
+    <script src="JS/slideshow.js"></script>
+
+</body>
+
+
+</html>
